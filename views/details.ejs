@@ -1,0 +1,10 @@
+<h1> Detail page for <%= cat.name%> </h1>
+<img src=<%=cat.source%> alt=kitty height="300" width="300">
+<h4> favorite food is <%= cat.favorite_food%>
+<h4> hobbies include: </h4>
+<% for (x in cat.hobbies) { %>
+<ul>
+<li><%= cat.hobbies[x] %></li>
+
+</ul>
+<% } %>
